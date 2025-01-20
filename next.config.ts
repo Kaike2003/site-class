@@ -1,10 +1,5 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  productionBrowserSourceMaps: true,
-  images: {
-    domains: ["google.com", "maps.google.com"],
-  },
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
