@@ -10,7 +10,7 @@ export default function Design() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Conheça alguns dos Designers de identidade corporativa e IU/UX desenvolvidos por nós
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-subtitle">
             Criação de identidade corporativa, UI/UX sob demanda, nosso compromisso é com a satisfação dos nossos
             clientes
           </p>

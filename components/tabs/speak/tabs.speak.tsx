@@ -20,19 +20,19 @@ export function TabsSpeak() {
           <CardContent className="space-y-2">
             <div className="space-y-2">
               <Label htmlFor="name">Nome</Label>
-              <Input id="name" defaultValue="Pedro Duarte" />
+              <Input id="name" placeholder="Nome" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" defaultValue="Pedro Duarte" />
+              <Input id="email" placeholder="Exemplo@gmail.com" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="assunto">Assunto</Label>
-              <Input id="assunto" defaultValue="Pedro Duarte" />
+              <Input id="assunto" placeholder="Assunto" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="mensagem">Mensagem</Label>
-              <Textarea id="mensagem" placeholder="Type your message here." />
+              <Textarea id="mensagem" placeholder="Mensagem" />
             </div>
           </CardContent>
           <CardFooter>
@@ -48,19 +48,19 @@ export function TabsSpeak() {
           <CardContent className="space-y-2">
             <div className="space-y-2">
               <Label htmlFor="name">Nome</Label>
-              <Input id="name" defaultValue="Pedro Duarte" />
+              <Input id="name" placeholder="Nome" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" defaultValue="Pedro Duarte" />
+              <Input id="email" placeholder="Exemplo@gmail.com" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="assunto">Assunto</Label>
-              <Input id="assunto" defaultValue="Pedro Duarte" />
+              <Input id="assunto" placeholder="Assunto" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="mensagem">Mensagem</Label>
-              <Textarea id="mensagem" placeholder="Type your message here." />
+              <Textarea id="mensagem" placeholder="Mensagem" />
             </div>
           </CardContent>
           <CardFooter>

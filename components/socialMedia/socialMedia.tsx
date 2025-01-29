@@ -3,9 +3,9 @@
 import { Button } from "../ui/button";
 import image from "@/public/assets/fundoPrinciapl.jpeg";
 import Image from "next/image";
-import image2 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.35.00.jpeg";
-import image3 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.35.00 (1).jpeg";
-import image4 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.34.58.jpeg";
+import image2 from "@/public/assets/valores.jpg";
+import image3 from "@/public/assets/valores.jpg";
+import image4 from "@/public/assets/valores.jpg";
 
 export default function SocialMedia() {
   return (
@@ -13,7 +13,7 @@ export default function SocialMedia() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Social mídia manager</h2>
-          <p className="text-lg text-muted-foreground">Gestão de Redes sociais, Marketing Digital e Branding</p>
+          <p className="text-subtitle">Gestão de Redes sociais, Marketing Digital e Branding</p>
         </div>
       </div>
 

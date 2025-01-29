@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import fundo from "@/public/assets/fundoPrinciapl.jpeg";
+import Link from "next/link";
 
 export default function BriefPresentation() {
   return (
@@ -11,9 +12,9 @@ export default function BriefPresentation() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tighter">
               Transformando Ideias em Soluções Digitais Inovadoras
             </h2>
-            <p className="text-muted-foreground">
-              Na Classicus Digital, combinamos criatividade e tecnologia para desenvolver softwares, websites,
-              aplicativos móveis e designs de identidade visual que impulsionam o sucesso dos nossos clientes.
+            <p className="text-black">
+              Na Alçada Digital, combinamos criatividade e tecnologia para desenvolver softwares, websites, aplicativos
+              móveis e designs de identidade visual que impulsionam o sucesso dos nossos clientes.
             </p>
             <ul className="space-y-2">
               {["Desenvolvimento de Software", "Design UI/UX", "Aplicativos Móveis", "Social Media"].map(
@@ -27,12 +28,15 @@ export default function BriefPresentation() {
                 )
               )}
             </ul>
-            <Button size="lg">Conheça Nossos Serviços</Button>
+
+            <Link href={"#servicos"} className="flex">
+              <Button size="lg">Conheça Nossos Serviços</Button>
+            </Link>
           </div>
           <div className="relative aspect-video md:aspect-square rounded-2xl overflow-hidden shadow-xl">
             <Image
               src={fundo}
-              alt="Classicus Digital Showcase"
+              alt="Alçada Digital Showcase"
               layout="fill"
               objectFit="cover"
               className="transition-transform duration-300 hover:scale-105"

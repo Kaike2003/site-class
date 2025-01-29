@@ -1,10 +1,6 @@
 import image from "@/public/assets/fundoPrinciapl.jpeg";
 import Image from "next/image";
-import image2 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.35.00.jpeg";
-import image3 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.35.00 (1).jpeg";
-import image4 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.34.58.jpeg";
 import { Card, CardContent } from "../ui/card";
-import { Eye, Goal, Globe } from "lucide-react";
 
 const element = [
   {
@@ -17,52 +13,25 @@ const element = [
     key: 2,
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     description: "21-08-2003",
-    image: image2,
+    image: image,
   },
   {
     key: 3,
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     description: "21-08-2003",
-    image: image3,
-  },
-  {
-    key: 4,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    description: "21-08-2003",
-    image: image4,
-  },
-];
-
-const special = [
-  {
-    icon: Eye,
-    title: "Visão",
-    description:
-      "Oferecer soluções digitais inovadoras e personalizadas que impulsionem o crescimento dos nossos clientes, transformando ideias em realidades tecnológicas por meio de design inteligente, desenvolvimento ágil e excelência em experiência do usuário.",
-  },
-  {
-    icon: Goal,
-    title: "Missão",
-    description:
-      "Ser reconhecida como uma empresa líder no desenvolvimento de soluções digitais, criando tecnologias que impactem positivamente negócios e pessoas, tornando-se referência em qualidade, inovação e atendimento no mercado global.",
-  },
-  {
-    icon: Globe,
-    title: "Valores",
-    description:
-      "Buscamos constantemente novas ideias e tecnologias para entregar soluções eficientes e criativas aos nossos clientes, e valorizamos o aprendizado constante e o desenvolvimento profissional de nossa equipe, para nos mantermos à frente no mercado.",
+    image: image,
   },
 ];
 
 export default function Blog() {
   return (
-    <section className="bg-gradient-to-b from-background to-secondary/20 py-16 md:py-24">
+    <section className="bg-gradient-to-b from-background to-secondary/20 py-16 md:py-24" id="blog">
       <div className="container mx-auto px-4 flex flex-col">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Explore nosso Blog e fique por dentro das últimas novidades
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-subtitle">
             Aqui você encontra artigos, dicas e insights sobre tecnologia, inovação e muito mais. Acompanhe nossos
             conteúdos e se atualize com as tendências do mercado.
           </p>
@@ -108,34 +77,7 @@ export default function Blog() {
                     </div>
                   </div>
                   <CardContent className="p-4">
-                    <p className="text-sm text-muted-foreground">{p.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {special.map((p, index) => (
-                <Card
-                  key={index}
-                  className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer"
-                >
-                  <div className="relative h-48 md:h-80">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                    <Image
-                      src={image}
-                      alt={p.title}
-                      layout="fill"
-                      objectFit="cover"
-                      className="transition-transform duration-300 hover:scale-105"
-                    />
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p.icon size={32} className="mb-2" />
-                      <h3 className="text-xl font-semibold">{p.title}</h3>
-                    </div>
-                  </div>
-                  <CardContent className="p-4">
-                    <p className="text-sm text-muted-foreground">{p.description}</p>
+                    <p className="d">{p.description}</p>
                   </CardContent>
                 </Card>
               ))}

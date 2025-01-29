@@ -1,7 +1,7 @@
 import Image from "next/image";
-import image1 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.34.58.jpeg";
-import image2 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.35.00 (1).jpeg";
-import image3 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.35.00.jpeg";
+import image1 from "@/public/assets/ux-ui.jpg";
+import image2 from "@/public/assets/midea.jpeg";
+import image3 from "@/public/assets/developer.jpg";
 import { Brush, Code, Share2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -28,11 +28,11 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="bg-gradient-to-b from-background to-secondary/20 py-16 md:py-24">
+    <section className="bg-gradient-to-b from-background to-secondary/20 py-16 md:py-24" id="servicos">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Nossos Serviços</h2>
-          <p className="text-lg text-muted-foreground">Soluções personalizadas para impulsionar seu negócio</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 ">Nossos Serviços</h2>
+          <p className="text-subtitle">Soluções personalizadas para impulsionar seu negócio</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -56,7 +56,7 @@ export default function ServicesSection() {
                 </div>
               </div>
               <CardContent className="p-4">
-                <p className="text-sm text-muted-foreground">{service.text}</p>
+                <p className="text-black">{service.text}</p>
               </CardContent>
             </Card>
           ))}

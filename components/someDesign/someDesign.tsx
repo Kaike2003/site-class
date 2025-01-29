@@ -1,55 +1,44 @@
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
-import image1 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.34.58.jpeg";
-import image2 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.35.00 (1).jpeg";
-import image3 from "@/public/assets/WhatsApp Image 2025-01-12 at 11.35.00.jpeg";
-import { Brush, Code, Share2 } from "lucide-react";
+
+import AngoMinas from "@/public/assets/revista.png";
+import Nota10 from "@/public/assets/nota.png";
+import Digital from "@/public/assets/digital.png";
+import Comenius from "@/public/assets/Dark Blue and Gold Modern Illustrative Happy New Year 2025 Instagram Post (3).png";
+
+import { Brush } from "lucide-react";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "../ui/button";
 
 const services = [
   {
-    icon: Code,
-    title: "TypeScript",
+    icon: Brush,
+    title: "Revista Angola Minas",
     descritpion:
-      "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ela foi construída em cima do JavaScript.",
-    image: image3,
-  },
-  {
-    icon: Share2,
-    title: "TypeScript",
-    descritpion:
-      "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ela foi construída em cima do JavaScript.",
-    image: image2,
-  },
-  {
-    icon: Code,
-    title: "TypeScript",
-    descritpion:
-      "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ela foi construída em cima do JavaScript.",
-    image: image1,
+      "A *Revista Angola Minas* apresenta um design UI/UX moderno, otimizado para oferecer uma experiência intuitiva e agradável. Focamos em uma navegação fluida e visualmente atraente, permitindo aos usuários acessar informações sobre o setor de mineração em Angola de forma eficiente e interativa. O design foi pensado para facilitar o engajamento e a experiência do usuário.",
+    image: AngoMinas,
   },
   {
     icon: Brush,
-    title: "TypeScript",
+    title: "Nota 10",
     descritpion:
-      "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ela foi construída em cima do JavaScript.",
-    image: image3,
-  },
-  {
-    icon: Code,
-    title: "TypeScript",
-    descritpion:
-      "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ela foi construída em cima do JavaScript.",
-    image: image2,
+      "Nota 10 é uma aplicação que utiliza design UI/UX focado na experiência do usuário, oferecendo interfaces claras e fáceis de usar para estudantes, pais e professores. A navegação simples e a acessibilidade das informações sobre desempenho acadêmico, avaliações e faltas tornam a plataforma eficiente e agradável de usar. A experiência do usuário foi prioridade no desenvolvimento, garantindo interação intuitiva.",
+    image: Nota10,
   },
   {
     icon: Brush,
-    title: "TypeScript",
+    title: "Alçada Digital",
     descritpion:
-      "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ela foi construída em cima do JavaScript.",
-    image: image1,
+      "Na Alçada Digital, aplicamos práticas de design UI/UX para criar soluções digitais inovadoras que atendem às necessidades dos nossos clientes. Com foco em usabilidade e estética, desenvolvemos softwares, websites e aplicativos móveis que oferecem experiências intuitivas e envolventes. A experiência do usuário é a chave para nossos designs, garantindo que cada interface seja funcional, acessível e agradável.",
+    image: Digital,
+  },
+  {
+    icon: Brush,
+    title: "Comenius",
+    descritpion:
+      "A Comenius é uma plataforma de ensino online que foi desenvolvida com foco em design UI/UX, proporcionando uma navegação simples e eficiente. A interface intuitiva permite que estudantes e instrutores interajam de forma fluida, com acessibilidade e flexibilidade no gerenciamento de cursos online. A plataforma é projetada para oferecer uma experiência de aprendizado dinâmica e centrada no usuário, maximizando a interação e o engajamento.",
+    image: Comenius,
   },
 ];
 
@@ -62,7 +51,7 @@ export function SomeDesign() {
           Identidade Corporativa
         </TabsTrigger>
         <TabsTrigger className="hidden md:flex" value="design">
-          Designer de Identidade Corporativa
+          Designers Corporativos
         </TabsTrigger>
       </TabsList>
       <TabsContent value="UI/UX">
@@ -92,7 +81,7 @@ export function SomeDesign() {
                     </div>
                   </div>
                   <CardContent className="p-4">
-                    <p className="text-sm text-muted-foreground">{service.descritpion}</p>
+                    <p className="">{service.descritpion}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -110,7 +99,7 @@ export function SomeDesign() {
           </CardHeader>
           <CardContent className="space-y-2 p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.map((service, index) => (
+              {/*  {services.map((service, index) => (
                 <Card
                   key={index}
                   className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
@@ -130,10 +119,10 @@ export function SomeDesign() {
                     </div>
                   </div>
                   <CardContent className="p-4">
-                    <p className="text-sm text-muted-foreground">{service.descritpion}</p>
+                    <p className="">{service.descritpion}</p>
                   </CardContent>
                 </Card>
-              ))}
+              ))} */}
             </div>
           </CardContent>
           <CardFooter className="flex md:hidden">

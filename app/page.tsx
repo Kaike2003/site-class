@@ -1,11 +1,10 @@
-import Blog from "@/components/blog/blog";
+import About from "@/components/about/about";
 import BriefPresentation from "@/components/briefPresentation/briefPresentation";
 import { CaroucelIcons } from "@/components/caroucelIcons/caroucelIcons";
 import Design from "@/components/design/desgin";
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import Service from "@/components/services/services";
-import SocialMedia from "@/components/socialMedia/socialMedia";
 import Software from "@/components/software/software";
 import Speak from "@/components/speak/speak";
 
@@ -19,8 +18,9 @@ export default function Home() {
         <Service />
         <Software />
         <Design />
-        <SocialMedia />
-        <Blog />
+        {/* <SocialMedia /> */}
+        {/* <Blog /> */}
+        <About />
         <Speak />
       </div>
       <Footer />
