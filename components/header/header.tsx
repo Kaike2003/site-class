@@ -14,7 +14,7 @@ export default function Header() {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const backgroundImages = useMemo(
-    () => ["/assets/fundoPrinciapl.jpeg", "/assets/ux-ui.jpg", "/assets/developer.jpg"],
+    () => ["/assets/fundoPrinciapl.webp", "/assets/ux-ui.webp", "/assets/developer.webp"],
     []
   );
 
@@ -45,7 +45,7 @@ export default function Header() {
         alt="Background"
         layout="fill"
         objectFit="cover"
-        quality={75}
+        quality={100}
         priority={currentImageIndex === 0}
         loading={currentImageIndex === 0 ? "eager" : "lazy"}
         placeholder="blur"
@@ -135,8 +135,8 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="hidden md:flex w-full mt-[14%] z-50 container mx-auto px-4">
-        <Image className="w-[20%] flex" src={alcadaDigita || "/placeholder.svg"} alt="Text Header" />
+      <div className="relative md:flex w-full mt-[16%] z-10 container mx-auto px-4">
+        <Image className="w-[20%] md:w-[10%] flex" src={alcadaDigita || "/placeholder.svg"} alt="Text Header" />
       </div>
 
       <WaveCurve />
